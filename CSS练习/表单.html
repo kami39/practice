@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px; /*内边距*/
+        margin: 8px 0; /*外边距*/
+        box-sizing: border-box;
+        border: 2px solid grey;
+        border-radius: 4px; /*圆角*/
+        background-color: white; /*背景色*/
+        color: blue; /*文本颜色*/
+        background-image: url("https://static.runoob.com/images/mix/searchicon.png"); /*加入搜索图标*/
+        background-repeat: no-repeat;
+        background-position: 10px 10px;
+        padding: 12px 20px 12px 40px;
+      }
+      input[type="text"]:focus {
+        border: 3px solid #555;
+      }
+
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none; /*禁用文本框可以重置大小的功能（一般拖动右下角可以重置大小）*/
+      }
+
+      select {
+        width: 100%;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+      }
+
+      input[type="button"],
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer; /*鼠标效果*/
+      }
+    </style>
+  </head>
+  <body>
+    <p>文本框的边框:</p>
+
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" />
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" />
+
+      <p>textarea输入框</p>
+      <form>
+        <textarea>一些文本...</textarea>
+      </form>
+      <p>下拉框</p>
+      <select id="country" name="country">
+        <option value="au">Australia</option>
+        <option value="ca">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <p>按钮样式</p>
+
+      <input type="button" value="按钮" />
+      <input type="reset" value="重置" />
+      <input type="submit" value="提交" />
+    </form>
+  </body>
+</html>

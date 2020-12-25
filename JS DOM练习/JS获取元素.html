@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>菜鸟教程(runoob.com)</title>
+  </head>
+  <body>
+    <p>这是一个段落</p>
+    <input id="input" type="text" name="firstname" style="width: 100px;;" placeholder="Your name.."></input>
+    <script>
+var p=document.getElementsByTagName("p")[0];
+console.log(p);
+var text=p.innerHTML; //获取文本
+console.log(text);
+document.write(text);
+document.write("\n");
+
+      var input=document.getElementById("input");
+      var name=input.name; //获取属性
+      var style=input.style.width; //获取样式
+      console.log("获取属性");
+      console.log(style);
+      document.write(name+"::::"+style); 
+
+    </script>
+
+  </body>
+</html>

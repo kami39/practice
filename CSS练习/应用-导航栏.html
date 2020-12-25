@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0; /*顶格*/
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        border: 1px solid #555; /*加上边框*/
+        position: fixed; /*fixed 一定要加不然全屏高度不生效*/
+        height: 100%; /*全屏高度*/
+        overflow: auto; /*超出时滚动条*/
+      }
+
+      li a {
+        display: block; /*设置成块元素*/
+        color: #000;
+        padding: 8px 16px; /*上下填充8px, 左右填充16px*/
+        text-decoration: none; /*去除下划线*/
+      }
+
+      li {
+        text-align: center; /*居中*/
+        /* border-bottom: 1px solid #555; */
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+
+      li a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h2>垂直导航条</h2>
+    <p>以下实例让每个链接居中，并给每个列表选项添加边框。</p> -->
+
+    <ul>
+      <li><a class="active" href="#home">主页</a></li>
+      <li><a href="#news">新闻</a></li>
+      <li><a href="#contact">联系</a></li>
+      <li><a href="#about">关于</a></li>
+    </ul>
+    <div style="margin-left: 25%; padding: 1px 16px; height: 1000px">
+      <h2>Fixed Full-height Side Nav</h2>
+      <h3>
+        Try to scroll this area, and see how the sidenav sticks to the page
+      </h3>
+      <p>
+        Notice that this div element has a left margin of 25%. This is because
+        the side navigation is set to 25% width. If you remove the margin, the
+        sidenav will overlay/sit on top of this div.
+      </p>
+      <p>
+        Also notice that we have set overflow:auto to sidenav. This will add a
+        scrollbar when the sidenav is too long (for example if it has over 50
+        links inside of it).
+      </p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+    </div>
+  </body>
+</html>

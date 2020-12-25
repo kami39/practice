@@ -1,0 +1,19 @@
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>west kind</title>
+    <script type="text/javascript">
+	    function myfunction() {
+	    	window.location.href="http://localhost:8089/";
+	    }
+    </script>
+  </head>
+
+  <body>
+	<p>我们的清单</p>
+	{% for kind in kinds %}
+	<p>{{ kind.name }}</p>
+	{% endfor %}
+	<input type="button" value="点击这里跳到首页" onclick="myfunction();" name="" >
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>菜鸟教程(runoob.com)</title>
+    <script>
+      function changetext(id) {
+        id.innerHTML = "Ooops!";
+      }
+    </script>
+  </head>
+  <body>
+    <p>你好世界!</p>
+    <div id="main">
+      <p>DOM 是非常有用的。</p>
+      <p>该实例展示了 <b>getElementsByTagName</b> 方法</p>
+    </div>
+    <script>
+      var x = document.getElementById("main");
+      console.log(x);
+      var y = x.getElementsByTagName("p");
+      document.write('id="main"元素中的第一个段落为：' + y[0].innerHTML);
+    </script>
+
+    <!-- 改变样式 -->
+    <h1 id="id1">我的标题 1</h1>
+    <button
+      type="button"
+      onclick="document.getElementById('id1').style.color='red'"
+    >
+      点我!
+    </button>
+
+    <!-- 使用函数 -->
+    <h1 onclick="changetext(this)">点击文本!</h1>
+  </body>
+</html>
